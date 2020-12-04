@@ -20,9 +20,6 @@ var coinChange = function(coins, amount) {
             // if the coing is equal or less than the amount we want to make
             // we can use it
             if(coins[j] <= i){
-                // dp[i -  coins[j]] means that we have to look now for the coins
-                // that can make the amount of the amount minus the coin we added
-                // + 1 is the coin we added 
                 dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
             }
         }
