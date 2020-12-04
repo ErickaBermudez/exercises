@@ -1,4 +1,7 @@
 var canCompleteCircuit = function(gas, cost) {
+
+    if(gas === null || cost === null)
+        return -1
     
     var numberOfStations = gas.length 
     
